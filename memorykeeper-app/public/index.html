@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192.png" />
+    <meta name="theme-color" content="#FF8C00" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MemoryKeeper - Preserve Your Precious Memories</title>
+    <script>
+      (function () {
+        try {
+          var storageKey = 'memorykeeper-theme';
+          var storedPreference = window.localStorage.getItem(storageKey);
+          var isDark = storedPreference === 'dark';
+
+          if (storedPreference !== 'light' && storedPreference !== 'dark') {
+            var supportsMatchMedia = typeof window.matchMedia === 'function';
+            isDark = supportsMatchMedia ? window.matchMedia('(prefers-color-scheme: dark)').matches : false;
+          }
+
+          if (isDark) {
+            document.documentElement.classList.add('dark');
+            document.documentElement.style.colorScheme = 'dark';
+          } else {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.style.colorScheme = 'light';
+          }
+        } catch (error) {
+          console.warn('Unable to set initial color scheme:', error);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script>
+  </body>
+</html>

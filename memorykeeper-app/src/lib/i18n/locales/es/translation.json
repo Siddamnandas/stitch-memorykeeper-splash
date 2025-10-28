@@ -1,0 +1,74 @@
+{
+  "app": {
+    "title": "MemoryKeeper",
+    "tagline": "Fortalece Tu Mente, Un Recuerdo a la Vez"
+  },
+  "navigation": {
+    "home": "Inicio",
+    "dashboard": "Tablero",
+    "journal": "Diario",
+    "games": "Juegos",
+    "settings": "Configuración",
+    "profile": "Perfil"
+  },
+  "home": {
+    "welcome": "Bienvenido a MemoryKeeper",
+    "dailyPrompt": "Sugerencia Diaria",
+    "startJournaling": "Comenzar a Escribir",
+    "voiceInput": "Entrada de Voz",
+    "recentMemories": "Recuerdos Recientes"
+  },
+  "journal": {
+    "title": "Diario de Memorias",
+    "placeholder": "¿Qué te gustaría recordar hoy?",
+    "save": "Guardar Recuerdo",
+    "cancel": "Cancelar"
+  },
+  "voice": {
+    "startRecording": "Iniciar Grabación",
+    "stopRecording": "Detener Grabación",
+    "processing": "Procesando...",
+    "detectedLanguage": "Idioma Detectado",
+    "transcriptionHistory": "Historial de Transcripción",
+    "history": {
+      "empty": "Aún no hay historial de transcripción. Comience a grabar para construir su historial."
+    },
+    "error": {
+      "browserNotSupported": "La entrada de voz no es compatible con su navegador. Por favor, intente con Chrome o Edge.",
+      "recognitionError": "Error con la entrada de voz. Por favor, inténtelo de nuevo.",
+      "startRecordingError": "Error al iniciar la grabación de voz. Por favor, inténtelo de nuevo."
+    }
+  },
+  "memory": {
+    "strength": "Fuerza de la Memoria",
+    "strengthLevel": "Nivel {{level}}",
+    "lastReviewed": "Revisado por última vez {{date}}"
+  },
+  "games": {
+    "title": "Juegos de Memoria",
+    "memoryMatch": "Memoria Emparejada",
+    "storyQuest": "Búsqueda de Historias",
+    "timelineTango": "Tango de Línea de Tiempo"
+  },
+  "settings": {
+    "title": "Configuración",
+    "language": "Idioma",
+    "notifications": "Notificaciones",
+    "privacy": "Privacidad",
+    "dataExport": "Exportar Datos",
+    "darkMode": "Modo Oscuro"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Ocurrió un error",
+    "success": "¡Éxito!",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "close": "Cerrar",
+    "view": "Ver",
+    "upload": "Subir",
+    "clear": "Limpiar"
+  }
+}

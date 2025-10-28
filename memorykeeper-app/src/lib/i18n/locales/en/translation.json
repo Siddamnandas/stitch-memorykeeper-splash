@@ -1,0 +1,74 @@
+{
+  "app": {
+    "title": "MemoryKeeper",
+    "tagline": "Strengthen Your Mind, One Memory at a Time"
+  },
+  "navigation": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "journal": "Journal",
+    "games": "Games",
+    "settings": "Settings",
+    "profile": "Profile"
+  },
+  "home": {
+    "welcome": "Welcome to MemoryKeeper",
+    "dailyPrompt": "Daily Prompt",
+    "startJournaling": "Start Journaling",
+    "voiceInput": "Voice Input",
+    "recentMemories": "Recent Memories"
+  },
+  "journal": {
+    "title": "Memory Journal",
+    "placeholder": "What would you like to remember today?",
+    "save": "Save Memory",
+    "cancel": "Cancel"
+  },
+  "voice": {
+    "startRecording": "Start Recording",
+    "stopRecording": "Stop Recording",
+    "processing": "Processing...",
+    "detectedLanguage": "Detected Language",
+    "transcriptionHistory": "Transcription History",
+    "history": {
+      "empty": "No transcription history yet. Start recording to build your history."
+    },
+    "error": {
+      "browserNotSupported": "Voice input is not supported in your browser. Please try Chrome or Edge.",
+      "recognitionError": "Error with voice input. Please try again.",
+      "startRecordingError": "Error starting voice recording. Please try again."
+    }
+  },
+  "memory": {
+    "strength": "Memory Strength",
+    "strengthLevel": "Level {{level}}",
+    "lastReviewed": "Last reviewed {{date}}"
+  },
+  "games": {
+    "title": "Memory Games",
+    "memoryMatch": "Memory Match",
+    "storyQuest": "Story Quest",
+    "timelineTango": "Timeline Tango"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "notifications": "Notifications",
+    "privacy": "Privacy",
+    "dataExport": "Data Export",
+    "darkMode": "Dark Mode"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success!",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "view": "View",
+    "upload": "Upload",
+    "clear": "Clear"
+  }
+}

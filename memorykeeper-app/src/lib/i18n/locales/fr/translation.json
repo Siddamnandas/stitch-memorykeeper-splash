@@ -1,0 +1,74 @@
+{
+  "app": {
+    "title": "MemoryKeeper",
+    "tagline": "Renforcez Votre Esprit, Un Souvenir à la Fois"
+  },
+  "navigation": {
+    "home": "Accueil",
+    "dashboard": "Tableau de bord",
+    "journal": "Journal",
+    "games": "Jeux",
+    "settings": "Paramètres",
+    "profile": "Profil"
+  },
+  "home": {
+    "welcome": "Bienvenue sur MemoryKeeper",
+    "dailyPrompt": "Question Quotidienne",
+    "startJournaling": "Commencer à Écrire",
+    "voiceInput": "Entrée Vocale",
+    "recentMemories": "Souvenirs Récents"
+  },
+  "journal": {
+    "title": "Journal de Mémoire",
+    "placeholder": "Que voudriez-vous vous rappeler aujourd'hui ?",
+    "save": "Sauvegarder le Souvenir",
+    "cancel": "Annuler"
+  },
+  "voice": {
+    "startRecording": "Démarrer l'Enregistrement",
+    "stopRecording": "Arrêter l'Enregistrement",
+    "processing": "Traitement en Cours...",
+    "detectedLanguage": "Langue Détectée",
+    "transcriptionHistory": "Historique de Transcription",
+    "history": {
+      "empty": "Aucun historique de transcription pour le moment. Commencez à enregistrer pour créer votre historique."
+    },
+    "error": {
+      "browserNotSupported": "L'entrée vocale n'est pas prise en charge dans votre navigateur. Veuillez essayer Chrome ou Edge.",
+      "recognitionError": "Erreur avec l'entrée vocale. Veuillez réessayer.",
+      "startRecordingError": "Erreur lors du démarrage de l'enregistrement vocal. Veuillez réessayer."
+    }
+  },
+  "memory": {
+    "strength": "Force de la Mémoire",
+    "strengthLevel": "Niveau {{level}}",
+    "lastReviewed": "Dernière révision {{date}}"
+  },
+  "games": {
+    "title": "Jeux de Mémoire",
+    "memoryMatch": "Mémory",
+    "storyQuest": "Quête d'Histoires",
+    "timelineTango": "Tango Chronologique"
+  },
+  "settings": {
+    "title": "Paramètres",
+    "language": "Langue",
+    "notifications": "Notifications",
+    "privacy": "Confidentialité",
+    "dataExport": "Exporter les Données",
+    "darkMode": "Mode Sombre"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur s'est produite",
+    "success": "Succès !",
+    "save": "Sauvegarder",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "close": "Fermer",
+    "view": "Voir",
+    "upload": "Télécharger",
+    "clear": "Effacer"
+  }
+}

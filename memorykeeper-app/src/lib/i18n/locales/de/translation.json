@@ -1,0 +1,74 @@
+{
+  "app": {
+    "title": "MemoryKeeper",
+    "tagline": "Stärken Sie Ihren Geist, Eine Erinnerung nach der Anderen"
+  },
+  "navigation": {
+    "home": "Startseite",
+    "dashboard": "Dashboard",
+    "journal": "Tagebuch",
+    "games": "Spiele",
+    "settings": "Einstellungen",
+    "profile": "Profil"
+  },
+  "home": {
+    "welcome": "Willkommen bei MemoryKeeper",
+    "dailyPrompt": "Tägliche Eingabeaufforderung",
+    "startJournaling": "Mit dem Schreiben beginnen",
+    "voiceInput": "Spracheingabe",
+    "recentMemories": "Aktuelle Erinnerungen"
+  },
+  "journal": {
+    "title": "Gedächtnis-Tagebuch",
+    "placeholder": "Was möchten Sie sich heute merken?",
+    "save": "Erinnerung speichern",
+    "cancel": "Abbrechen"
+  },
+  "voice": {
+    "startRecording": "Aufnahme starten",
+    "stopRecording": "Aufnahme stoppen",
+    "processing": "Verarbeitung...",
+    "detectedLanguage": "Erkannte Sprache",
+    "transcriptionHistory": "Transkriptionsverlauf",
+    "history": {
+      "empty": "Noch kein Transkriptionsverlauf. Beginnen Sie mit der Aufnahme, um Ihren Verlauf aufzubauen."
+    },
+    "error": {
+      "browserNotSupported": "Die Spracheingabe wird in Ihrem Browser nicht unterstützt. Bitte versuchen Sie es mit Chrome oder Edge.",
+      "recognitionError": "Fehler bei der Spracheingabe. Bitte versuchen Sie es erneut.",
+      "startRecordingError": "Fehler beim Starten der Sprachaufnahme. Bitte versuchen Sie es erneut."
+    }
+  },
+  "memory": {
+    "strength": "Gedächtnisstärke",
+    "strengthLevel": "Stufe {{level}}",
+    "lastReviewed": "Zuletzt überprüft {{date}}"
+  },
+  "games": {
+    "title": "Gedächtnisspiele",
+    "memoryMatch": "Memory-Match",
+    "storyQuest": "Geschichten-Quest",
+    "timelineTango": "Zeitleisten-Tango"
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "language": "Sprache",
+    "notifications": "Benachrichtigungen",
+    "privacy": "Datenschutz",
+    "dataExport": "Daten exportieren",
+    "darkMode": "Dunkelmodus"
+  },
+  "common": {
+    "loading": "Wird geladen...",
+    "error": "Ein Fehler ist aufgetreten",
+    "success": "Erfolg!",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "close": "Schließen",
+    "view": "Ansehen",
+    "upload": "Hochladen",
+    "clear": "Löschen"
+  }
+}

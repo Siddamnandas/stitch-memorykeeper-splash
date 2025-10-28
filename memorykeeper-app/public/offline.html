@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MemoryKeeper — Offline</title>
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+      body {
+        font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        min-height: 100vh;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff8f0;
+        color: #3f2d1b;
+      }
+      .card {
+        max-width: 420px;
+        width: 90%;
+        border-radius: 24px;
+        padding: 32px;
+        box-shadow: 0 30px 60px rgba(255, 140, 0, 0.25);
+        background: white;
+      }
+      h1 {
+        font-size: 1.75rem;
+        margin-bottom: 0.5rem;
+      }
+      p {
+        margin: 0.5rem 0;
+        line-height: 1.5;
+      }
+      .cta {
+        margin-top: 1.5rem;
+        padding: 12px 20px;
+        background: linear-gradient(135deg, #ff8c00, #ffaa00);
+        color: white;
+        border: none;
+        border-radius: 999px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card" role="alert" aria-live="polite">
+      <h1>You're offline</h1>
+      <p>We kept your latest rituals and journal drafts safe. Reconnect to sync memories and continue collaborating with family.</p>
+      <p>If you're in the middle of capturing a story, stay on this screen and reopen the app once you're back online.</p>
+      <button class="cta" onclick="window.location.reload()">Retry Connection</button>
+    </main>
+  </body>
+</html>
