@@ -27,7 +27,7 @@ const DataMigrationDialog: FC<DataMigrationDialogProps> = ({
     const checkLocalData = async () => {
       if (isOpen && user) {
         const { hasLocalDataToMigrate } = await import('../lib/dataMigrationService');
-        const data = await hasLocalDataToMigrate();
+        const data = await hasLocalDataToMigrate(user.id);
         setHasLocalData(data);
       }
     };

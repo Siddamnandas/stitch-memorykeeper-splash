@@ -67,7 +67,7 @@ export const migrateUserData = async (
     });
 
     // Step 2: Get local profile
-    const localProfile = await getProfile();
+    const localProfile = await getProfile(userId);
 
     onProgress?.({
       isMigrating: true,
@@ -166,7 +166,7 @@ export const migrateUserData = async (
               result.errors.push(`Failed to update profile: ${updateError.message}`);
             } else {
               result.profileMigrated = true;
-              await markProfileAsSynced();
+              await markProfileAsSynced(userId);
             }
           } else {
             // Create new profile
@@ -182,7 +182,7 @@ export const migrateUserData = async (
               result.errors.push(`Failed to create profile: ${insertError.message}`);
             } else {
               result.profileMigrated = true;
-              await markProfileAsSynced();
+              await markProfileAsSynced(userId);
             }
           }
         }
@@ -224,14 +224,14 @@ export const migrateUserData = async (
 /**
  * Check if user has local data that needs migration
  */
-export const hasLocalDataToMigrate = async (): Promise<{
+export const hasLocalDataToMigrate = async (userId: string): Promise<{
   hasMemories: boolean;
   hasProfile: boolean;
   totalMemories: number;
 }> => {
   try {
     const memories = await getAllMemories();
-    const profile = await getProfile();
+    const profile = await getProfile(userId);
 
     return {
       hasMemories: memories.some(m => !m.synced),

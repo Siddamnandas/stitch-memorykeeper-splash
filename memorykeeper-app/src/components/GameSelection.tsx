@@ -11,7 +11,7 @@ interface GameMeta {
 
 const GAMES: GameMeta[] = [
   {
-    id: 'match-up',
+    id: 'memory-match-up',
     title: 'Memory Match-Up',
     description: 'A quick game to test your visual memory.',
     hero:

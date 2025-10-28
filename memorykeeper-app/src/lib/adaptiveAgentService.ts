@@ -24,7 +24,7 @@ export const getAdaptiveAgentProfile = async (userId: string): Promise<AdaptiveA
     // If not available, try IndexedDB
     if (memoryStrength === null) {
       try {
-        const profile = await getProfile();
+        const profile = await getProfile(userId);
         return {
           userId,
           currentAgentType: determineAgentType(profile?.memoryStrength || 50),

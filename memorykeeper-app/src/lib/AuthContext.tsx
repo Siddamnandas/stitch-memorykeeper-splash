@@ -142,7 +142,7 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
     try {
       if (!supabase) {
         try {
-          const offlineProfile = await getOfflineProfile();
+          const offlineProfile = await getOfflineProfile(userId);
           if (offlineProfile) {
             const authProfile: AuthUserProfile = {
               id: offlineProfile.id,
@@ -196,7 +196,7 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
         memoryStrength: authProfile.memory_strength || 0,
         synced: true
       });
-      await markProfileAsSynced();
+      await markProfileAsSynced(userId);
       return authProfile;
     } catch (error) {
       console.error('Error fetching profile:', error);
@@ -240,7 +240,7 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
         memoryStrength: authProfile.memory_strength || 0,
         synced: true
       });
-      await markProfileAsSynced();
+      await markProfileAsSynced(userId);
       return authProfile;
     } catch (error) {
       console.error('Error creating profile:', error);
@@ -301,7 +301,7 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
           memoryStrength: authProfile.memory_strength || 0,
           synced: true
         });
-        await markProfileAsSynced();
+        await markProfileAsSynced(userId);
       } catch (error) {
         console.warn('Unable to update offline profile from subscription:', error);
       }
@@ -820,7 +820,7 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
           memoryStrength: updatedProfile.memory_strength || 0,
           synced: true
         });
-        await markProfileAsSynced();
+        await markProfileAsSynced(updatedProfile.id || user?.id);
       }
     } catch (error: any) {
       // Re-throw with user-friendly message if not already set
